@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>BMI Calculator</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="input-section">
+            <h2>BMI Calculation</h2>
+            <p>Get your BMI calculation in a second</p>
+            <form id="bmiForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required>
+                </div>
+                <button type="submit">Calculate BMI</button>
+            </form>
+        </section>
+
+        <section class="output-section">
+            <h2>Result</h2>
+            <p>Your BMI is <span id="resultBMI"></span>.</p>
+            <p>You are <span id="resultStatus"></span>.</p>
+        </section>
+    </main>
+
+</body>
+</html>
+
